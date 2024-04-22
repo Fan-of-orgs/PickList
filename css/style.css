@@ -1,10 +1,59 @@
 body{
-    background-color: aqua;
+    background-color: black;
+    overflow: hidden;
 }
 
-.box{
-    width: 50%;
-    height: 50%;
-    background-color: red;
-    position: absolute;
+.Main{
+    background-color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    align-self: center;
 }
+
+.Left_nav{
+    height: 98%;
+    width: 10%;
+    background-color: rgb(36, 36, 36);
+    border-radius: 2em;
+    align-self: center;
+}
+
+.Center_content{
+    height: 98%;
+    width: calc(85%/2);
+    background-color: green;
+    border-radius: 2em;
+    align-self: center;
+}
+
+.Right_Tiles{
+    height: 98%;
+    width: calc(85%/2);
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+    .TopTile{
+        width: 100%;
+        height: calc(100%/12);
+        border-radius: 2em;
+        background-color: pink;
+    }
+    .MiddleTile{
+        width: 100%;
+        height: calc(100% - calc(100%/12) - calc(100%/2) - 2em);
+        border-radius: 2em;
+        background-color: purple;
+    }
+    .BottomTile{
+        width: 100%;
+        height: calc(100%/2);
+        border-radius: 2em;
+        background-color: yellow;
+    }
