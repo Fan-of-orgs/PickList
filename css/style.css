@@ -19,8 +19,15 @@ body{
     width: 10%;
     background-color: rgb(36, 36, 36);
     border-radius: 2em;
-    align-self: center;
+    /* align-self: center; */
+    display: flex;
+    flex-wrap: wrap;
 }
+    .tile{
+        height: 10%;
+        width: 80%;
+        justify-content: center;
+    }
 
 .Center_content{
     height: 98%;
